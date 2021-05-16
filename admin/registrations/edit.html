@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Edit Client</h2>
+
+<form>
+  <%= render "admin/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <label>Email</label><br />
+    <input type="email" name="email">
+  </div>
+
+    <div>Currently waiting confirmation for: client@email.com</div>
+
+  <div class="field">
+    <label> Password</label> <i>(leave blank if you don't want to change it)</i><br />
+    <input type="password" name="password">
+      <br />
+      <em>8 characters minimum</em>
+  </div>
+
+  <div class="field">
+    <label>Password Confirmation<br />
+    <input type="password" name="password_confirmation">
+  </div>
+
+  <div class="field">
+    <label>Current password</label> <i>(we need your current password to confirm your changes)</i><br />
+    <input type="password" name="current_password">
+  </div>
+
+  <div class="actions">
+    <input type="submit" value="Update">
+  </div>
+</form>
+
+<h3>Cancel my account</h3>
+
+<p>Unhappy? <input type="button" value="Cancel my Account"></p>
+
+<a href="#">Back</a>
+</body>
+</html>

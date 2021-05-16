@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <%= render "admin/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <label>New Password</label><br />
+        <em>(8 characters minimum)</em><br />
+      <input type="password" name="password" autocomplete="false">
+    </div>
+
+    <div class="field">
+      <label>Confirm new password</label><br />
+      <input type="password" name="password_confirmation" autocomplete="false">
+    </div>
+
+    <div class="actions">
+      <input type="submit" value="Change My Password">
+    </div>
+  </form>
+<%= render "admin/shared/links" %>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!Doctype.html>
+  <html>
+
+  <head>
+    <title>index page</title>
+  </head>
+
+  <body>
+    <div class="home-content">
+      <div class="left-home-content">
+        <div class="carousel-container">
+
+
+          <!-- <% @carousel_photos.each do |photograph| %> -->
+
+          <div class="carousel fade">
+
+            <!-- <%= image_tag photograph.photo.url %> -->
+            <img src="image/jharkhand_bilding.jpg">
+
+            <div class="caption-container">
+
+              <span class="caption"></span>
+            </div>
+            <div class="menu_bar">
+              <a </div>
+            </div>
+            <!-- <% end %> -->
+
+            <a class="unit-nav prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="unit-nav next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="carousel-dots">
+              <!--  <% (1..@carousel_photos.length).each do |i| %>-->
+              <span class="dot" onclick="currentSlide"></span>
+              <!--<% end %>-->
+            </div>
+          </div>
+        </div>
+        <div class="right-home-content">
+          <div class="contact-container">
+            <!--<%= form_for(@client, url: client_path, method: :post) do |form| %>-->
+            <div class="text-field-container">
+
+              <!-- <%= form.text_field :name, placeholder: 'Name', class: 'text-field' %>-->
+
+              <input type="text" , class="text-field" , placeholder="name" , name="name"></br>
+            </div>
+            <div class="text-field-container">
+              <!--<%= form.text_field :contact_no, placeholder: 'Phone Number', class: 'text-field' %>  -->
+
+              <input type="text" , class="text-field" , placeholder="Phone Number" , name="contact_no"></br>
+            </div>
+            <div class="text-field-container">
+              <!-- <%= form.text_field :email, placeholder: 'Email', class: 'text-field' %>-->
+
+              <input type="text" , class="text-field" , placeholder="Email" , name="email"></br>
+            </div>
+            <div class="text-field-container">
+
+              <!-- <%= form.text_field :note, placeholder: 'Specific Interest', class: 'text-field' %>-->
+              <input type="text" , class="text-field" , placeholder="Specific Interest" , name="note"></br>
+            </div>
+            <!--<%= form.submit 'SUBMIT', class: 'button-submit' %>-->
+            <input type="submit" class="button-submit">
+            <!--<% end %>-->
+          </div>
+        </div>
+        <div class="home-about">
+          <!-- LANDMARK DEVELOPER IS <%= link_to('CERTIFIED', about_path) %> BY JHARKHAND GOVERNMENT.<%= link_to('Learn More', about_path) %>-->
+          <a href="image/jharkhand_bilding.jpg">LANDMARK DEVELOPER IS BY JHARKHAND GOVERNMENT.</a>
+        </div>
+      </div>
+  </body>
+
+  </html>

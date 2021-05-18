@@ -1,18 +1,25 @@
 <!Doctype html>
 <html>
-  <head>
-      <title>GALLERY PAGE</title>
-  </head>
-  <body>
-    <div class="subtitle">GALLERY</div>
-    <!--<% if @photographs.present? %>-->
-      <div class="gallery">
-       <!--<% @photographs.each do |photograph| %>-->
-          <div class="gallery-item">
-           <!-- <%= image_tag(photograph.photo.url(:medium)) %>-->
-          </div>
-       <!-- <% end %>-->
-      </div>
-    <!--<% end %>-->
-  </body>
+
+<head>
+  <title>GALLERY PAGE</title>
+  <script src="js/application.js"></script>
+</head>
+
+<body>
+  <div class="site-container">
+    <partial-header></partial-header>
+    <partial-nav></partial-nav>
+    <div class="main-content">
+      <div class="subtitle">GALLERY</div>
+        <div class="gallery">
+            <div class="gallery-item">
+              <img src="images/photograph1.jpeg" alt="photograph1">
+            </div>
+        </div>
+    </div>
+    <partial-footer></partial-footer>
+    </div>
+</body>
+
 </html>
